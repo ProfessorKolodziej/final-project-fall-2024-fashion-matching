@@ -17,7 +17,7 @@
     "es6"
   ],
   "scripts": {
-    "start": "cross-env live-server src",
+    "start": "cross-env live-server src --browser=firefox",
     "lint:html": "echo \"Validating your HTML...\" && html-validate --config .htmlvalidate.json --formatter @profkexplains/htmlvalidate \"src\" && chalk green --no-stdin \"✓ No errors found in your HTML\n\n\"",
     "lint:styles": "echo \"Starting Stylelint...\" && stylelint \"src/**/*.css\" --custom-formatter ./config/formatter.stylelint.js && chalk green --no-stdin \"✓ No errors found in your CSS\n\n\"",
     "lint": "npm run lint:html",
