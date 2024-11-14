@@ -56,24 +56,8 @@ body, html {
 	transform: scale(1.1);
 	color: #e0aaff;
 	text-shadow: 3px 3px 20px rgba(200, 150, 255, 1);
-}<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fantasy Game Start Screen</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="start-screen">
-        <h1 class="game-title">Quick Matching</h1>
-        <button class="start-button" onclick="startGame()">Start Game</button>
-    </div>
+}
 
-    <script>
-        function startGame() {
-            alert("Game Starting..."); // Replace this with actual game start logic
-        }
-    </script>
-</body>
 {
 	margin: 0;
 	padding: 0;
@@ -83,21 +67,19 @@ body, html {
 body {
 	font-family: 'Cinzel', serif; /* Fantasy, medieval-like font */
 	background: url('fantasy-background.jpg') no-repeat center center fixed;
-	background-size: cover;
+	
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	overflow: hidden;
-	color: #5c2b20; /* Dark warm brown tone for main text */
+	
 }
 
 .start-screen {
 	text-align: center;
-	background:rgb(131, 33, 82); /* Light transparent background for readability */
 	padding: 20px 30px;
 	border-radius: 8px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
 }
 
 .game-title {
@@ -137,4 +119,29 @@ body {
 .start-button-icon {
 	font-size: 1.3em;
 	color: #5c2b20; /* Same color as the text */
+}
+
+
+
+/* Subpage desighn css code display here below */
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.Hawaii-image {
+    width: 100px;
+    height: auto;
+}
+
+.bluetop-image {
+    width: 20px;
+    height: auto;
+}
+
+.elegantdress-image {
+    width: 70px;
+    height: auto;
 }
