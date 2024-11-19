@@ -5,7 +5,7 @@ body, html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url('../images/Fantasy2.jpg');
+	background-image: url('../images/Gardenball.PNG');
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
@@ -14,10 +14,8 @@ body, html {
 
 .start-screen {
 	text-align: center;
-	background: rgba(255, 239, 215, 0.2); /* Light transparent background for readability */
 	padding: 40px 30px;
 	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .game-title {
 	font-size: 3em;
@@ -43,7 +41,7 @@ body, html {
 }
 .heading {
 	font-size: 3.5em;
-	color: #37066b; /* Purple tone for heading */
+	color: #c39fe9; /* Purple tone for heading */
 	font-family: 'Playfair Display', Georgia, serif;
 	font-weight: 700;
 	text-shadow: 2px 2px 15px rgba(51, 6, 99, 0.7); /* Subtle glow effect */
@@ -64,16 +62,8 @@ body, html {
 	box-sizing: border-box;
 }
 
-body {
-	font-family: 'Cinzel', serif; /* Fantasy, medieval-like font */
-	background: url('fantasy-background.jpg') no-repeat center center fixed;
-	
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	overflow: hidden;
-	
+
+
 }
 
 .start-screen {
@@ -94,7 +84,7 @@ body {
 	font-size: 1.2em;
 	font-weight: bold;
 	color: #5c2b20; /* Dark warm brown for button text */
-	background-color: rgba(255, 239, 215, 0.8); /* Light warm beige for button background */
+	background-color: rgba(223, 95, 165, 0.8); /* Light warm beige for button background */
 	border: 2px solid #5c2b20; /* Border to match text color */
 	border-radius: 6px;
 	cursor: pointer;
@@ -129,19 +119,4 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-}
-
-.Hawaii-image {
-    width: 100px;
-    height: auto;
-}
-
-.bluetop-image {
-    width: 20px;
-    height: auto;
-}
-
-.elegantdress-image {
-    width: 70px;
-    height: auto;
 }
