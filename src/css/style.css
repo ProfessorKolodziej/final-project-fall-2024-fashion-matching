@@ -5,7 +5,7 @@ body, html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url('../images/Gardenball.PNG');
+	background-image: url('../images/Fantasy2.jpg');
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
@@ -16,6 +16,7 @@ body, html {
 	text-align: center;
 	padding: 40px 30px;
 	border-radius: 10px;
+
 }
 .game-title {
 	font-size: 3em;
@@ -28,20 +29,19 @@ body, html {
 .heading:hover {
 	transform: scale(1.1); /
 	color: #e792e3;
-	text-shadow: 3px 3px 20px rgb(57, 5, 112); /* Brighter glow on hover */
+	text-shadow: 3px 3px 20px rgb(57, 5, 112); 
 }
 
 .background-section {
 	width: 100%;
-	height: 500px; /* Adjust as needed */
-	 /* Replace with your image path */
+	height: 500px; 
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 .heading {
 	font-size: 3.5em;
-	color: #c39fe9; /* Purple tone for heading */
+	color: #c8b5dd; 
 	font-family: 'Playfair Display', Georgia, serif;
 	font-weight: 700;
 	text-shadow: 2px 2px 15px rgba(51, 6, 99, 0.7); /* Subtle glow effect */
@@ -62,8 +62,16 @@ body, html {
 	box-sizing: border-box;
 }
 
-
-
+body {
+	font-family: 'Cinzel', serif; /* Fantasy, medieval-like font */
+	background: url('fantasy-background.jpg') no-repeat center center fixed;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+	
 }
 
 .start-screen {
@@ -84,7 +92,7 @@ body, html {
 	font-size: 1.2em;
 	font-weight: bold;
 	color: #5c2b20; /* Dark warm brown for button text */
-	background-color: rgba(223, 95, 165, 0.8); /* Light warm beige for button background */
+	background-color: rgba(223, 79, 163, 0.8); /* Light warm beige for button background */
 	border: 2px solid #5c2b20; /* Border to match text color */
 	border-radius: 6px;
 	cursor: pointer;
@@ -119,4 +127,19 @@ body, html {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
+}
+
+.Hawaii-image {
+    width: 100px;
+    height: auto;
+}
+
+.bluetop-image {
+    width: 20px;
+    height: auto;
+}
+
+.elegantdress-image {
+    width: 70px;
+    height: auto;
 }
