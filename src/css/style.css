@@ -5,7 +5,7 @@ body, html {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url('../images/Fantasy2.jpg');
+	background-image: url('../images/Gardenball.PNG');
 	background-size: cover;
 	background-position: center;
 	overflow: hidden;
@@ -123,23 +123,3 @@ body {
 
 /* Subpage desighn css code display here below */
 
-.image-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.Hawaii-image {
-    width: 100px;
-    height: auto;
-}
-
-.bluetop-image {
-    width: 20px;
-    height: auto;
-}
-
-.elegantdress-image {
-    width: 70px;
-    height: auto;
-}
