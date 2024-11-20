@@ -1,0 +1,129 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+    background-image: url(../images/Fantasy2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.start-screen {
+	text-align: center;
+	padding: 40px 30px;
+	border-radius: 10px;
+
+}
+.game-title {
+	font-size: 3em;
+	color: #5c2b20; 
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
+	margin-bottom: 15px;
+}
+
+
+.heading:hover {
+	transform: scale(1.1); 
+	color: #e792e3;
+	text-shadow: 3px 3px 20px rgb(57, 5, 112); 
+}
+
+.background-section {
+	width: 100%;
+	height: 500px; 
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.heading {
+	font-size: 3.5em;
+	color: #c8b5dd; 
+	font-family: 'Playfair Display', Georgia, serif;
+	font-weight: 700;
+	text-shadow: 2px 2px 15px rgba(51, 6, 99, 0.7); /* Subtle glow effect */
+	letter-spacing: 2px;
+	margin-bottom: 20px; 
+	text-align: center;
+}
+
+.heading:hover {
+	transform: scale(1.1);
+	color: #e0aaff;
+	text-shadow: 3px 3px 20px rgba(200, 150, 255, 1);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.body {
+	font-family: 'Cinzel', serif; 
+	background: url('fantasy-background.jpg') no-repeat center center fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+	
+}
+
+.start-screen {
+	text-align: center;
+	padding: 20px 30px;
+	border-radius: 8px;
+}
+
+.game-title {
+	font-size: 3em;
+	color: #5c2b20; /* Dark warm brown for title */
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Slight shadow for dimension */
+	margin-bottom: 15px;
+}
+
+.start-button {
+	padding: 12px 24px;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #5c2b20; /* Dark warm brown for button text */
+	background-color: rgba(223, 79, 163, 0.8); 
+	border: 2px solid #5c2b20; 
+	border-radius: 6px;
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	transition: transform 0.3s ease, background-color 0.3s ease;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.start-button:hover {
+	transform: scale(1.05); 
+	background-color: rgba(255, 239, 215, 1); 
+}
+
+.start-button:active {
+	transform: scale(0.98); 
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon for the start button */
+.start-button-icon {
+	font-size: 1.3em;
+	color: #5c2b20; 
+}
+
+
+
+/* Subpage desighn css code display here below */
+
