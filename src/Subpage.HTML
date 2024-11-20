@@ -4,31 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What Should I Wear for the Dance?</title>
-    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/subpage.css">
+</head>
+<style>
+body {
+		 margin: 0;
+		 padding: 0;
+		 font-family: Arial, sans-serif;
+	}
+
+	.background {
+		 position: absolute;
+		 top: 0;
+		 left: 0;
+		 width: 100%;
+		 height: 100%;
+		 z-index: -1;
+		 background: url('your-background-image.jpg') no-repeat center center;
+		 background-size: cover;
+	}
+
+	.foreground {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: flex-end;
+            height: 100vh; /* Full height */
+        }
+
+        .foreground img {
+            width: 100px; /* Set desired size */
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>What Should I Wear for the Dance?</h1>
-    <img src="images/Gardenball.PNG" alt="fantasy">
-   
-    <div class="image-container">
-        <img src="images/Model.jpg" alt="model" class="model-image">
-   
+    <div class="background"></div>
+    <div class="foreground">
+<img src="images/Gardenball.PNG" alt="fantasy">
+	<div class="background"></div>
+	<div class="foreground">
+
+	 <img src="images/Model.jpg" alt="model" class="model-image">
     <a href="dresspage.html">
-        <img src="images/Hawaii.PNG" alt="Hawaii" class="Hawaii-image">
+    <img src="images/Hawaii.PNG" alt="Hawaii" class="Hawaii-image">
+    <img src="images/Partydress.PNG" alt="Partydress">
+    <img src="images/Elegantdress.PNG" alt="Elegantdress" class="elegantdress-image">
     </a>
-   
-    <a href="dresspage2.html">
-        <img src="images/Partydress.PNG" alt="Partydress">
-    </a>
-        
-    <a href="dresspage3.html">   
-        <img src="images/Elegantdress.PNG" alt="Elegantdress" class="elegantdress-image">
-    </a> 
-       
-    
+
+
         <img src="images/Blueshirt.PNG" alt="bluetop" class="bluetop-image">
         <img src="images/Shorts.PNG" alt="Shorts">
- 
     </div>
 </body>
 </html>
