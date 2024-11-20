@@ -1,15 +1,20 @@
-body, html {
-	margin: 0;
-	padding: 0;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-image: url('../images/Gardenball.PNG');
-	background-size: cover;
-	background-position: center;
-	overflow: hidden;
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+    background-image: url(../images/Fantasy2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 .start-screen {
@@ -20,8 +25,8 @@ body, html {
 }
 .game-title {
 	font-size: 3em;
-	color: #5c2b20; /* Dark warm brown for title */
-	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Slight shadow for dimension */
+	color: #5c2b20; 
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
 	margin-bottom: 15px;
 }
 
@@ -46,7 +51,7 @@ body, html {
 	font-weight: 700;
 	text-shadow: 2px 2px 15px rgba(51, 6, 99, 0.7); /* Subtle glow effect */
 	letter-spacing: 2px;
-	margin-bottom: 20px; /* Spacing between heading and button */
+	margin-bottom: 20px; 
 	text-align: center;
 }
 
@@ -62,10 +67,9 @@ body, html {
 	box-sizing: border-box;
 }
 
-body {
-	font-family: 'Cinzel', serif; /* Fantasy, medieval-like font */
+.body {
+	font-family: 'Cinzel', serif; 
 	background: url('fantasy-background.jpg') no-repeat center center fixed;
-	
 	display: flex;
 	justify-content: center;
 	align-items: center;
