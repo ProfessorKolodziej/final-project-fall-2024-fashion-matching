@@ -1,15 +1,18 @@
-body, html {
-	margin: 0;
-	padding: 0;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-image: url('../images/Fantasy2.jpg');
-	background-size: cover;
-	background-position: center;
-	overflow: hidden;
 
+.homepage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+    background-image: url(../images/Fantasy2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 .start-screen {
@@ -20,14 +23,14 @@ body, html {
 }
 .game-title {
 	font-size: 3em;
-	color: #5c2b20; /* Dark warm brown for title */
-	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Slight shadow for dimension */
+	color: #5c2b20; 
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
 	margin-bottom: 15px;
 }
 
 
 .heading:hover {
-	transform: scale(1.1); /
+	transform: scale(1.1); 
 	color: #e792e3;
 	text-shadow: 3px 3px 20px rgb(57, 5, 112); 
 }
@@ -46,7 +49,7 @@ body, html {
 	font-weight: 700;
 	text-shadow: 2px 2px 15px rgba(51, 6, 99, 0.7); /* Subtle glow effect */
 	letter-spacing: 2px;
-	margin-bottom: 20px; /* Spacing between heading and button */
+	margin-bottom: 20px; 
 	text-align: center;
 }
 
@@ -56,16 +59,15 @@ body, html {
 	text-shadow: 3px 3px 20px rgba(200, 150, 255, 1);
 }
 
-{
+*{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-body {
-	font-family: 'Cinzel', serif; /* Fantasy, medieval-like font */
+.body {
+	font-family: 'Cinzel', serif; 
 	background: url('fantasy-background.jpg') no-repeat center center fixed;
-	
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -92,8 +94,8 @@ body {
 	font-size: 1.2em;
 	font-weight: bold;
 	color: #5c2b20; /* Dark warm brown for button text */
-	background-color: rgba(223, 79, 163, 0.8); /* Light warm beige for button background */
-	border: 2px solid #5c2b20; /* Border to match text color */
+	background-color: rgba(223, 79, 163, 0.8); 
+	border: 2px solid #5c2b20; 
 	border-radius: 6px;
 	cursor: pointer;
 	display: inline-flex;
@@ -104,42 +106,48 @@ body {
 }
 
 .start-button:hover {
-	transform: scale(1.05); /* Slight enlargement on hover */
-	background-color: rgba(255, 239, 215, 1); /* Slightly brighter on hover */
+	transform: scale(1.05); 
+	background-color: rgba(255, 239, 215, 1); 
 }
 
 .start-button:active {
-	transform: scale(0.98); /* Slight "press down" effect */
+	transform: scale(0.98); 
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 /* Icon for the start button */
 .start-button-icon {
 	font-size: 1.3em;
-	color: #5c2b20; /* Same color as the text */
+	color: #5c2b20; 
 }
 
 
 
 /* Subpage desighn css code display here below */
 
-.image-container {
+.model-container {
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    z-index: 4;
+}
+
+.clothes-container {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: auto;
+    height: auto;
+    z-index: 4;
 }
 
-.Hawaii-image {
-    width: 100px;
-    height: auto;
+.clothes-container a{
+    max-width: 30%;
+    display:block;
 }
 
-.bluetop-image {
-    width: 20px;
-    height: auto;
-}
-
-.elegantdress-image {
-    width: 70px;
-    height: auto;
+img{
+max-width: 100%;
 }
