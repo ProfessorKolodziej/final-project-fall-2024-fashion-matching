@@ -65,7 +65,7 @@
 	box-sizing: border-box;
 }
 
-.body {
+body {
 	font-family: 'Cinzel', serif; 
 	background: url('fantasy-background.jpg') no-repeat center center fixed;
 	display: flex;
@@ -124,7 +124,22 @@
 
 
 /* Subpage desighn css code display here below */
-
+.Subpage{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+    background-image: url(../images/Gardenball.PNG);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+	flex-direction: row-reverse;
+}
 .model-container {
     top: 50%;
     left: 20%;
@@ -141,6 +156,7 @@
     width: auto;
     height: auto;
     z-index: 4;
+	max-width:40%;
 }
 
 .clothes-container a{
