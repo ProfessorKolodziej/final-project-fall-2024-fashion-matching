@@ -159,7 +159,7 @@ body {
 	max-width:40%;
 }
 
-.clothes-container a{
+.clothes-container > *{
     max-width: 30%;
     display:block;
 }
@@ -167,3 +167,5 @@ body {
 img{
 max-width: 100%;
 }
+
+.dress
