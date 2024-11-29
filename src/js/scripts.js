@@ -1,7 +1,11 @@
 
 function startGame() {
-    // Navigate to subpage.html
     window.location.href = 'Subpage.HTML';
 }
 
-// change clothes jump //
+function goToBadChoice() {
+    const confirmChoice = confirm("Are you sure this is your final decision?");
+    if (confirmChoice) {
+        window.location.href = 'badchoice.html';
+    }
+}
