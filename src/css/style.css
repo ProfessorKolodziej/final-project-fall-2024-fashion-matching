@@ -128,8 +128,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: "Yuji Mai", serif;
-	font-size: auto;
-	font-style: bold;
+	color: rgb(247, 244, 247);
     background-image: url(../images/Gardenball.PNG);
     background-size: cover;
     background-position: center;

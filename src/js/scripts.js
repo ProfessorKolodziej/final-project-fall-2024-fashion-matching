@@ -23,17 +23,43 @@ function addButtonToPage() {
 }
 
 
-
 function handleCheckButtonClick() {
     const confirmChoice = confirm("Are you sure this is your final decision?");
     if (confirmChoice) {
+        const imgElement = document.querySelector('.modle-container img');
+        const imgSrc = imgElement ? imgElement.src : '';
+
         if (window.location.pathname.includes('dresspage3.html')) {
-            window.location.href = 'finalchoice.html'; 
-        } else {
-            window.location.href = 'badchoice.html'; 
+            window.location.href = 'finalchoice.html';
+        } else { 
+            window.location.href = `badchoice.html?img=${encodeURIComponent(imgSrc)}`;
         }
-    }   
+    }
 }
 
 
 document.addEventListener('DOMContentLoaded', addButtonToPage);
+
+//
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
+
+function loadImage() {
+    const imgSrc = getQueryParam('img'); 
+    const imgElement = document.querySelector('.modleb-container img');
+
+    if (imgSrc) {
+        imgElement.src = imgSrc; 
+        imgElement.alt = "Model";
+    }
+}
+
+
+document.addEventListener('DOMContentLoaded', loadImage);
+
+function goToBadChoice(imgSrc) {
+    window.location.href = `badchoice.html?img=${encodeURIComponent(imgSrc)}`;
+}
