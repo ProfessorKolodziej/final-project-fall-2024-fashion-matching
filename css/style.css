@@ -1,14 +1,12 @@
-
-body {
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
+.homepage{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Cinzel', serif;
     background-image: url(../images/Fantasy2.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     height: 100vh;
     position: relative;
 	margin: 0;
@@ -67,7 +65,7 @@ body {
 	box-sizing: border-box;
 }
 
-.body {
+body {
 	font-family: 'Cinzel', serif; 
 	background: url('fantasy-background.jpg') no-repeat center center fixed;
 	display: flex;
@@ -103,8 +101,6 @@ body {
 	display: inline-flex;
 	align-items: center;
 	gap: 8px;
-	transition: transform 0.3s ease, background-color 0.3s ease;
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 .start-button:hover {
@@ -117,7 +113,7 @@ body {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Icon for the start button */
+
 .start-button-icon {
 	font-size: 1.3em;
 	color: #5c2b20; 
@@ -127,3 +123,208 @@ body {
 
 /* Subpage desighn css code display here below */
 
+.Subpage{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Yuji Mai", serif;
+	font-size: auto;
+	font-style: bold;
+	color: rgb(247, 244, 247);
+    background-image: url(../images/Gardenball.PNG);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+	flex-direction: row-reverse;
+	position: relative;
+}
+
+.model-container {
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+.clothes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: auto;
+    height: auto;
+    z-index: 4;
+	max-width:40%;
+}
+
+.clothes-container > *{
+    max-width: 30%;
+    display:block;
+}
+
+img{
+max-width: 100%;
+}
+
+
+/* Badchoice desighn css code display here below */
+.badchoice{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Yuji Mai", serif;
+	color:rgb(139, 6, 6);
+    background-image: url(../images/iceclif.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+	flex-direction: row-reverse;
+}
+.modelb-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+.modleb-container img {
+    max-width: 50%; 
+    height: auto;
+}
+
+/* good choice*/
+.finalchoice{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/Ballroom.PNG);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+	flex-direction: row-reverse;
+}
+
+.Text-container{
+	font-size: 26px; 
+	font-family: "Yuji Mai", serif;
+	color: rgb(254, 235, 140);
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 5;
+}
+.modelf-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+.modlef-container img {
+    max-width: 50%; 
+    height: auto;
+}
+
+
+
+/* Check button design*/
+.custom-button {
+		position: absolute;
+		right: 20px;
+		bottom: 20px;
+		background-color: #e27fe2; 
+		color: white; 
+		font-size: 16px; 
+		font-family: "Yuji Mai", serif;
+		border: none; 
+		border-radius: 8px;
+		cursor: pointer; 
+		border-radius: 25px;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		margin: 4px 2px;
+	}
+	
+	.custom-button:hover {
+		background-color: #9e28c2;
+		transform: scale(1.05);
+	}
+	
+	/* return button */
+	.return-button {
+		background-color: #3c42ee;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		font-size: 16px; 
+		font-family: "Yuji Mai", serif;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		margin: 4px 2px;
+		cursor: pointer;
+		border-radius: 8px;
+		transition: background-color 0.3s;
+	}
+
+	.return-button:hover {
+		background-color: #30c0e4;
+	}
+
+	.return-button {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		z-index: 5;
+	}
+
+	.wrongtext-container {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 5;
+	}
+
+	/* home button */
+	.home-button {
+		background-color: #d23674;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+		margin: 4px 2px;
+		cursor: pointer;
+		border-radius: 8px;
+	}
+	
+	.home-button:hover {
+		background-color: #ea83e3; 
+		transform: scale(1.05); 
+	}
+	
+	.home-button {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		z-index: 5;
+	}
+		
