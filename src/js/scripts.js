@@ -1,8 +1,4 @@
 
-function startGame() {
-    window.location.href = 'Subpage.HTML';
-}
-
 
 
 function createButton() {
@@ -60,6 +56,56 @@ function loadImage() {
 
 document.addEventListener('DOMContentLoaded', loadImage);
 
+//multiple html links//
 function goToBadChoice(imgSrc) {
     window.location.href = `badchoice.html?img=${encodeURIComponent(imgSrc)}`;
+}
+
+
+// return button //
+document.addEventListener('DOMContentLoaded', () => {
+    const buttonContainer = document.getElementById('button-container');
+
+    const returnButton = document.createElement('button');
+    returnButton.textContent = 'Return'; 
+    returnButton.className = 'return-button'; 
+
+    returnButton.addEventListener('click', () => {
+        window.location.href = 'Subpage.html';
+    });
+
+    buttonContainer.appendChild(returnButton);
+});
+
+//home button //
+document.addEventListener('DOMContentLoaded', () => {
+    const homeButtonContainer = document.getElementById('home-button-container');
+
+    const homeButton = document.createElement('button');
+    homeButton.textContent = 'Home';
+    homeButton.className = 'home-button'; 
+
+    homeButton.addEventListener('click', () => {
+        window.location.href = 'index.html';
+    });
+
+    homeButtonContainer.appendChild(homeButton);
+});
+
+
+// start game //
+document.addEventListener('DOMContentLoaded', () => {
+    const startButtonContainer = document.getElementById('start-button-container');
+
+    const startButton = document.createElement('button');
+    startButton.className = 'start-button'; 
+    startButton.innerHTML = `<span class="start-button-icon">★</span> Start Dressing`; 
+
+    startButton.addEventListener('click', startGame);
+
+    startButtonContainer.appendChild(startButton);
+});
+
+function startGame() {
+    window.location.href = 'Subpage.HTML'; 
 }
