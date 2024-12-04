@@ -147,8 +147,6 @@ body {
     top: 50%;
     left: 20%;
     transform: translate(-50%, -50%);
-    width: auto;
-    height: auto;
     z-index: 4;
 }
 
@@ -190,8 +188,17 @@ max-width: 100%;
     overflow: hidden;
 	flex-direction: row-reverse;
 }
-
-
+.modelb-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+.modleb-container img {
+    max-width: 50%; 
+    height: auto;
+}
 
 /* good choice*/
 .finalchoice{
@@ -211,11 +218,25 @@ max-width: 100%;
 }
 
 .Text-container{
-	font-size: 16px; 
+	font-size: 26px; 
 	font-family: "Yuji Mai", serif;
-	color: white
+	color: rgb(254, 235, 140);
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	z-index: 5;
 }
-
+.modelf-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+.modlef-container img {
+    max-width: 50%; 
+    height: auto;
+}
 
 
 
