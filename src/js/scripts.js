@@ -4,13 +4,6 @@ function startGame() {
 }
 
 
-window.goToBadChoice = function () {
-    const confirmChoice = confirm("Are you sure this is your final decision?");
-    if (confirmChoice) {
-        window.location.href = 'badchoice.html';
-    }
-};
-
 
 function createButton() {
     const button = document.createElement('button');
@@ -34,7 +27,7 @@ function handleCheckButtonClick() {
     const confirmChoice = confirm("Are you sure this is your final decision?");
     if (confirmChoice) {
         if (window.location.pathname.includes('dresspage3.html')) {
-            window.location.href = 'goodchoice.html'; 
+            window.location.href = 'finalchoice.html'; 
         } else {
             window.location.href = 'badchoice.html'; 
         }
