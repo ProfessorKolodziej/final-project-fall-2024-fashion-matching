@@ -167,3 +167,10 @@ body {
 img{
 max-width: 100%;
 }
+
+/*subpage font*/
+.yuji-mai-regular {
+	font-family: "Yuji Mai", serif;
+	font-weight: 400;
+	font-style: normal;
+  }
