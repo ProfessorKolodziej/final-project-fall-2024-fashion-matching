@@ -15,6 +15,7 @@ window.goToBadChoice = function () {
 function createButton() {
     const button = document.createElement('button');
     button.textContent = 'Check';
+    button.className = 'custom-button';
     button.onclick = handleCheckButtonClick; 
     return button;
 }
@@ -23,26 +24,18 @@ function createButton() {
 function addButtonToPage() {
     const container = document.querySelector('.clothes-container'); 
     if (container) {
-        console.log('Container found, adding button'); 
         const button = createButton();
         container.appendChild(button); 
-    } else {
-        console.log('Container not found!'); 
-    }
+    } 
 }
 
 
 function handleCheckButtonClick() {
-    const currentPage = window.location.pathname; 
-    console.log(`Current page: ${currentPage}`); 
     const confirmChoice = confirm("Are you sure this is your final decision?");
-    
     if (confirmChoice) {
-        if (currentPage.includes('dresspage3.html')) {
-            console.log('Redirecting to goodchoice.html');
-            window.location.href = 'goodchoice.html';  
+        if (window.location.pathname.includes('dresspage3.html')) {
+            window.location.href = 'goodchoice.html'; 
         } else {
-            console.log('Redirecting to badchoice.html'); 
             window.location.href = 'badchoice.html'; 
         }
     }
