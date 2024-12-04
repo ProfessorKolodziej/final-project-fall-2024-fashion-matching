@@ -5,24 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What Should I Wear for the Dance?</title>
     <link rel="stylesheet" href="css/style.css"> 
-    <script>
-        function getQueryParam(param) {
-            const urlParams = new URLSearchParams(window.location.search);
-            return urlParams.get(param);
-        }
-
-        function loadImage() {
-            const imgSrc = getQueryParam('img'); 
-            const imgElement = document.querySelector('.modleb-container img');
-
-            if (imgSrc) {
-                imgElement.src = imgSrc; 
-                imgElement.alt = "Model";
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', loadImage);
-    </script>
+    <script src="js/scripts.js" defer></script>
 </head>
 <body class="badchoice">
     <div class="wrongtext-container">

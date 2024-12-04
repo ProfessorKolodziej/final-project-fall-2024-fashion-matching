@@ -39,3 +39,27 @@ function handleCheckButtonClick() {
 
 
 document.addEventListener('DOMContentLoaded', addButtonToPage);
+
+//
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
+
+function loadImage() {
+    const imgSrc = getQueryParam('img'); 
+    const imgElement = document.querySelector('.modleb-container img');
+
+    if (imgSrc) {
+        imgElement.src = imgSrc; 
+        imgElement.alt = "Model";
+    }
+}
+
+
+document.addEventListener('DOMContentLoaded', loadImage);
+
+function goToBadChoice(imgSrc) {
+    window.location.href = `badchoice.html?img=${encodeURIComponent(imgSrc)}`;
+}
