@@ -23,6 +23,7 @@ function addButtonToPage() {
 }
 
 
+
 function handleCheckButtonClick() {
     const confirmChoice = confirm("Are you sure this is your final decision?");
     if (confirmChoice) {
@@ -31,7 +32,8 @@ function handleCheckButtonClick() {
         } else {
             window.location.href = 'badchoice.html'; 
         }
-    }
+    }   
 }
+
 
 document.addEventListener('DOMContentLoaded', addButtonToPage);
