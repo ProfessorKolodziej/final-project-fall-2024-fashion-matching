@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
 .homepage{
     display: flex;
     justify-content: center;
@@ -115,7 +115,7 @@ body {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Icon for the start button */
+
 .start-button-icon {
 	font-size: 1.3em;
 	color: #5c2b20; 
@@ -124,11 +124,14 @@ body {
 
 
 /* Subpage desighn css code display here below */
+
 .Subpage{
 	display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Cinzel', serif;
+    font-family: "Yuji Mai", serif;
+	font-size: auto;
+	font-style: bold;
     background-image: url(../images/Gardenball.PNG);
     background-size: cover;
     background-position: center;
@@ -140,6 +143,7 @@ body {
     overflow: hidden;
 	flex-direction: row-reverse;
 }
+
 .model-container {
     top: 50%;
     left: 20%;
@@ -168,9 +172,39 @@ img{
 max-width: 100%;
 }
 
-/*subpage font*/
-.yuji-mai-regular {
-	font-family: "Yuji Mai", serif;
-	font-weight: 400;
-	font-style: normal;
-  }
+
+/* Badchoice desighn css code display here below */
+.badchoice{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+    background-image: url(../images/iceclif.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+	flex-direction: row-reverse;
+}
+
+/* good choice*/
+.goodchoice{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cinzel', serif;
+    background-image: url(../images/Ballroom.PNG);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+	margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+	flex-direction: row-reverse;
+}
